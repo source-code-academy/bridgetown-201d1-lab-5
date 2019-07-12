@@ -84,12 +84,18 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
+  var total = 0;
+  for(var i=0; i<sumArr.length; i++) {
+    total += sumArr[i];
+  }
+  var arrString = sumArr.join();
+  var array = [total, `${arrString} was passed in as an array of numbers, and ${total} is their sum.`];
+  return array;
   //eslint-disable-line
   // var sum = sumArr[0] + sumArr[1] + sumArr[2]; // we could use a for loop here but is it worth it?
   // var str = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum} is their sum.`;
   // return [sum, str];
 }
-
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
