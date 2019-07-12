@@ -86,7 +86,7 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) {
   var total = 0;
   for(var i=0; i<sumArr.length; i++) {
-    total += sumArr[i];
+    total = sum(total, sumArr[i])[0];
   }
   var arrString = sumArr.join();
   var array = [total, `${arrString} was passed in as an array of numbers, and ${total} is their sum.`];
@@ -114,11 +114,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) {
+  var mult = 1;
+  for(var i = 0; i < multArr.length; i++) {
+    mult = multiply(mult, multArr[i])[0];
+  }
+  var multString = multArr.join();
+  var array = [mult, `The numbers ${multString} have a product of ${mult}.`];
+  return array;
   //eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
