@@ -10,16 +10,16 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) {
   //eslint-disable-line
-  var arr = [];
+  // var arr = [];
 
-  arr[0] = a + b;
-  arr[1] = "The sum of " + a + " and " + b + " is " + arr[0] + ".";
+  // arr[0] = a + b;
+  // arr[1] = "The sum of " + a + " and " + b + " is " + arr[0] + ".";
 
-  return arr;
+  // return arr;
 }
 
 // Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+// testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -56,22 +56,22 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a, b, c) {
   //eslint-disable-line
 
-  var sum1 = sum(a, b); // [3 ,"The sume of 1 and 2 is 3."]
-  console.log({ sum1 });
-  var sum2 = sum(sum1[0], c);
-  console.log({ sum2 });
-  var finalSum = sum2[0];
-  console.log({ finalSum });
+  // var sum1 = sum(a, b); // [3 ,"The sume of 1 and 2 is 3."]
+  // console.log({ sum1 });
+  // var sum2 = sum(sum1[0], c);
+  // console.log({ sum2 });
+  // var finalSum = sum2[0];
+  // console.log({ finalSum });
 
-  var total = sum(sum(a, b)[0], c)[0];
-  var product;
-  var sumStr = `${a} and ${b} and ${c} sum to ${total}.`;
-  var prodStr = "";
-  return [total, product, sumStr, prodStr];
+  // var total = sum(sum(a, b)[0], c)[0];
+  // var product;
+  // var sumStr = `${a} and ${b} and ${c} sum to ${total}.`;
+  // var prodStr = "";
+  // return [total, product, sumStr, prodStr];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4, 7, 5);
+// testSumAndMultiply(4, 7, 5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -90,9 +90,9 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
   //eslint-disable-line
-  var sum = sumArr[0] + sumArr[1] + sumArr[2]; // we could use a for loop here but is it worth it?
-  var str = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum} is their sum.`;
-  return [sum, str];
+  // var sum = sumArr[0] + sumArr[1] + sumArr[2]; // we could use a for loop here but is it worth it?
+  // var str = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum} is their sum.`;
+  // return [sum, str];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
