@@ -157,7 +157,7 @@ function sumArray(sumArr) {
   // var sum = sumArr[0] + sumArr[1] + sumArr[2]; // we could use a for loop here but is it worth it?
   // var str = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum} is their sum.`;
   // return [sum, str];
-}
+
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -182,17 +182,23 @@ testSumArray(testArray);
 /* Problem 5
 Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
-"The numbers 2,3,4 have a product of 24."
+"The numbers 2,3,4 have a product of 24."numbers
 
 IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. This function should handle an array containing three elements. However, you may continue to use the + operator for string concatenation.
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) {
-  //eslint-disable-line
-}
 
+function multiplyArray(prodArr) {
+
+  var product = prodArr[0] * prodArr[1] * prodArr[2];
+ var productString = `The numbers ${2},${3},${4} have a product of ${product}.`
+ 
+ return [product, productString];
+ }console.log(multiplyArray(testArray))
+ testMultiplyArray(testArray);
+ 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
