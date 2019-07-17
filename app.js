@@ -29,6 +29,17 @@ testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
+
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////////////
 /* Problem 2
 Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
@@ -47,6 +58,15 @@ function multiply(a, b) {
 testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
+
+
+
+
+
+
+
+
+
 
 /////////////////////////////////////
 /* Problem 3
@@ -81,6 +101,35 @@ testSumAndMultiply(4, 7, 5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////////////
 /* Problem 4
 Write a function called sumArray() that takes in an array of numbers as its single argument and then returns an array where the first element is the sum of the numbers in the array, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
@@ -94,8 +143,17 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
+
+
 function sumArray(sumArr) {
   //eslint-disable-line
+  var total = sumArr[0] + sumArr[1] + sumArr[2];
+  var totalString = `${2},${3},${4} was passed in as an array of numbers, and ${total} is their sum.` //redo the string pleb+
+
+  return [total, totalString];
+}
+
+
   // var sum = sumArr[0] + sumArr[1] + sumArr[2]; // we could use a for loop here but is it worth it?
   // var str = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum} is their sum.`;
   // return [sum, str];
@@ -106,6 +164,19 @@ function sumArray(sumArr) {
 testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /////////////////////////////////////
 /* Problem 5
@@ -130,6 +201,17 @@ function multiplyArray(multArr) {
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
 // Don't forget to create a new branch for your work on the next question, if you attempt it.
+
+
+
+
+
+
+
+
+
+
+
 
 /////////////////////////////////////
 /* STRETCH GOAL: Problem 6
